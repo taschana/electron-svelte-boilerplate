@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "electron .",
-    "start-dev": "nodemon --exec \"node run build & npm run start-dev\""
+    "start-dev": "nodemon --exec \"npm run build & npm run start\""
   },
   "author": "nataschadaniela",
   "license": "MIT",
