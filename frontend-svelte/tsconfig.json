@@ -1,13 +1,21 @@
 {
     /* https://github.com/snowpackjs/snowpack/blob/main/create-snowpack-app/app-template-svelte-typescript/tsconfig.json*/
     "include": [
-        "src",
-        "types"
+        "src/", "../@types"
+    ],
+    "exclude": [
+        "node_modules/*",
+        "public/*"
     ],
     "compilerOptions": {
         "module": "esnext",
         "target": "esnext",
+        "lib": [
+            "ESNEXT",
+            "dom"
+        ],
         "moduleResolution": "node",
+        "esModuleInterop": true,
         "jsx": "preserve",
         "baseUrl": "./",
         /* paths - import rewriting/resolving */
@@ -25,8 +33,12 @@
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "useDefineForClassFields": true,
+        "isolatedModules": true,
         "allowSyntheticDefaultImports": true,
         "importsNotUsedAsValues": "error",
-        "typeRoots": ["node_modules/@types", "../@types", "@types"]
+        //"types": ["BotModule", "BotModuleList"],
+        "declaration": true
+        ,"typeRoots": ["node_modules/@types", "../@types"],
+        "strictNullChecks": true,
     }
 }

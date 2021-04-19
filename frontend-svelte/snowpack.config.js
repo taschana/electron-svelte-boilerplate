@@ -12,6 +12,8 @@ module.exports = {
     '**/node_modules/**'
   ],
   mount: {
+    //public: {url: '/', static: true},
+    //src: {url: ''},
     /* ... */
   },
   plugins: [

@@ -6,7 +6,9 @@
   "homepage": "",
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build"
+    "start-dev": "npm run build & node ./dev/fix-_snowpack-files.js",
+    "build": "snowpack build",
+    "fix-output": "node ./dev/fix-_snowpack-files.js"
   },
   "dependencies": {
     "svelte": "^3.24.0"

@@ -1,5 +1,5 @@
 /* Add JavaScript code here! */
-
+// @ts-ignore
 import App from './App.svelte';
 
 const app = new App({
@@ -8,7 +8,7 @@ const app = new App({
 		name: 'world'
 	}
 });
-
+// @ts-ignore
 window.app = app;
 
 export default app;
