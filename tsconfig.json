@@ -10,7 +10,8 @@
         "noImplicitAny": false,
         "suppressImplicitAnyIndexErrors": true,
         "outDir": "dist/electron",
-        "typeRoots": ["node_modules/@types", "@types", "frontend-svelte/@types"]
+        "typeRoots": ["node_modules/@types", "@types", "frontend-svelte/@types"],
+        "rootDir": "src"
     },
     "exclude": [
         "node_modules",
